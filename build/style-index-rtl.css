@@ -1,0 +1,517 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-wpbb-wbd-progress-bar {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-name--below {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-icon {
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-track-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-track {
+  position: relative;
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-fill {
+  position: relative;
+  height: 100%;
+  border-radius: 999px;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-percentage {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-percentage-above {
+  text-align: left;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-percentage-outside {
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-milestone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateX(50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-milestone-line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-milestone-label {
+  position: absolute;
+  top: -22px;
+  right: 50%;
+  transform: translateX(50%);
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-track-wrapper.has-tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-track-wrapper.has-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 50%;
+  transform: translateX(50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-track-wrapper.has-tooltip:hover::after {
+  opacity: 1;
+}
+
+.wp-block-wpbb-wbd-progress-bar.is-style-thin .progress-track {
+  height: 6px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.is-style-thin .progress-percentage {
+  font-size: 8px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.is-style-medium .progress-track {
+  height: 12px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.is-style-medium .progress-percentage {
+  font-size: 10px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.is-style-thick .progress-track {
+  height: 20px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.is-style-thick .progress-percentage {
+  font-size: 12px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.is-style-striped .progress-fill {
+  background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 10px, rgba(255, 255, 255, 0.05) 10px, rgba(255, 255, 255, 0.05) 20px);
+  background-size: 40px 40px;
+  animation: wbd-striped-move 1.2s linear infinite;
+}
+
+@keyframes wbd-striped-move {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: right 40px top 0;
+  }
+}
+
+.wp-block-wpbb-wbd-progress-bar.is-style-circle {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.wp-block-wpbb-wbd-progress-bar .progress-circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+.wp-block-wpbb-wbd-progress-bar .circle-bg {
+  fill: none;
+  stroke: #e5e5e5;
+  stroke-width: 3.8;
+}
+
+.wp-block-wpbb-wbd-progress-bar .circle-fill {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.6s ease;
+}
+
+.wp-block-wpbb-wbd-progress-bar .circle-percentage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-radial-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-radial-outer {
+  display: inline-block;
+  position: relative;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-radial-svg {
+  display: block;
+  transform: rotate(90deg);
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-radial-fill {
+  transition: stroke-dasharray 1.2s ease;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-radial-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-radial-number {
+  font-weight: 700;
+  line-height: 1;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-radial-label {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-group-wrap {
+  width: 100%;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-group-row {
+  width: 100%;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-group-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-group-pct {
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-counter-wrap {
+  text-align: center;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-counter-number {
+  font-weight: 700;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.wp-block-wpbb-wbd-progress-bar .wbd-counter-label {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-ocean-blue .progress-name {
+  color: #1a1a2e;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-ocean-blue .progress-track {
+  background: #d2e3fc;
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-ocean-blue .progress-fill {
+  background: #1a73e8;
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-ocean-blue .progress-percentage {
+  color: #fff;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-sunset-fire .progress-name {
+  color: #2d1b0e;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-sunset-fire .progress-track {
+  background: #ffe8e0;
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-sunset-fire .progress-fill {
+  background: linear-gradient(-90deg, #ff6b35, #f7c59f);
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-sunset-fire .progress-percentage {
+  color: #fff;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-forest-green .progress-name {
+  color: #1b4332;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-forest-green .progress-track {
+  background: #d8f3dc;
+  border-radius: 4px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-forest-green .progress-fill {
+  background: linear-gradient(-90deg, #2d6a4f, #74c69d);
+  border-radius: 4px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-forest-green .progress-percentage {
+  color: #d8f3dc;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-purple-galaxy .progress-name {
+  color: #3d0066;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-purple-galaxy .progress-track {
+  background: #f3e5f5;
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-purple-galaxy .progress-fill {
+  background: linear-gradient(-90deg, #7b2d8b, #ce93d8);
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-purple-galaxy .progress-percentage {
+  color: #fff;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-golden-hour .progress-name {
+  color: #4a3500;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-golden-hour .progress-track {
+  background: #fff8e1;
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-golden-hour .progress-fill {
+  background: linear-gradient(-90deg, #f9a825, #fff176);
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-golden-hour .progress-percentage {
+  color: #4a3500;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-midnight-dark {
+  background: #1a2332;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-midnight-dark .progress-name {
+  color: #eceff1;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-midnight-dark .progress-track {
+  background: #263238;
+  border-radius: 0;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-midnight-dark .progress-fill {
+  background: #00e5ff;
+  border-radius: 0;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-midnight-dark .progress-percentage {
+  color: #000;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-rose-pink .progress-name {
+  color: #880e4f;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-rose-pink .progress-track {
+  background: #fce4f3;
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-rose-pink .progress-fill {
+  background: linear-gradient(-90deg, #e91e8c, #f48fb1);
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-rose-pink .progress-percentage {
+  color: #fff;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-arctic-ice .progress-name {
+  color: #01579b;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-arctic-ice .progress-track {
+  background: #e1f5fe;
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-arctic-ice .progress-fill {
+  background: linear-gradient(-90deg, #4fc3f7, #e1f5fe);
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-arctic-ice .progress-percentage {
+  color: #003d6b;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-corporate-gray .progress-name {
+  color: #263238;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-corporate-gray .progress-track {
+  background: #eceff1;
+  border-radius: 2px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-corporate-gray .progress-fill {
+  background: #546e7a;
+  border-radius: 2px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-corporate-gray .progress-percentage {
+  color: #fff;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-lemon-lime .progress-name {
+  color: #33691e;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-lemon-lime .progress-track {
+  background: #f1f8e9;
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-lemon-lime .progress-fill {
+  background: linear-gradient(-90deg, #76c442, #dce775);
+  border-radius: 999px;
+}
+
+.wp-block-wpbb-wbd-progress-bar.wbd-template-lemon-lime .progress-percentage {
+  color: #1b5e20;
+}
+
+[data-wbd-animate=true] .progress-fill,
+[data-wbd-animate=true].wbd-radial-fill {
+  transition: none !important;
+}
+
+@media (max-width: 768px) {
+  .wp-block-wpbb-wbd-progress-bar {
+    margin: 0.75em 0;
+  }
+  .wp-block-wpbb-wbd-progress-bar .progress-name {
+    font-size: 13px;
+    gap: 6px;
+  }
+  .wp-block-wpbb-wbd-progress-bar .progress-percentage {
+    font-size: 9px;
+  }
+  .wp-block-wpbb-wbd-progress-bar.is-style-thin .progress-percentage {
+    font-size: 7px;
+  }
+  .wp-block-wpbb-wbd-progress-bar.is-style-thick .progress-percentage {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wp-block-wpbb-wbd-progress-bar .progress-name {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .wp-block-wpbb-wbd-progress-bar .progress-track {
+    height: 10px;
+  }
+  .wp-block-wpbb-wbd-progress-bar.is-style-thin .progress-track {
+    height: 6px;
+  }
+  .wp-block-wpbb-wbd-progress-bar.is-style-thick .progress-track {
+    height: 16px;
+  }
+}

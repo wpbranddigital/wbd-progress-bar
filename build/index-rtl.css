@@ -1,0 +1,215 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+.wp-block-wpbb-wbd-progress-bar:focus, .wp-block-wpbb-wbd-progress-bar.is-selected {
+  outline: 1px solid var(--wp-admin-theme-color);
+  outline-offset: 2px;
+}
+
+.components-base-control .components-color-picker {
+  margin-top: 8px;
+}
+
+.wbd-help-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  background: linear-gradient(-135deg, #f0f4ff 0%, #faf5ff 100%);
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0;
+}
+
+.wbd-help-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.wbd-help-links a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.wbd-help-links a:hover {
+  text-decoration: underline;
+}
+
+.wbd-help-sep {
+  color: #bbb;
+  font-size: 11px;
+}
+
+.wbd-template-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.wbd-template-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f6f7f7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 7px 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.wbd-template-btn:hover {
+  background: #fff;
+  border-color: var(--wp-admin-theme-color, #007cba);
+}
+
+.wbd-template-swatch {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.wbd-template-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1e1e1e;
+  line-height: 1.3;
+}
+
+.wbd-circular-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.wbd-circular-theme-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: #f6f7f7;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 4px 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.wbd-circular-theme-btn span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #1e1e1e;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.wbd-circular-theme-btn:hover {
+  background: #fff;
+  border-color: var(--wp-admin-theme-color, #007cba);
+}
+
+.wbd-circular-theme-btn.is-active {
+  border-color: var(--wp-admin-theme-color, #007cba);
+  background: #e8f0fe;
+}
+
+.wbd-group-item-editor {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+.wbd-group-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.wbd-group-item-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: #888;
+  background: #e0e0e0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wbd-group-item-remove {
+  background: none;
+  border: none;
+  color: #cc0000;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 2px 4px;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.wbd-group-item-remove:hover {
+  background: #ffe0e0;
+}
+
+.wbd-add-item-btn {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  background: #007cba;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 4px;
+  transition: background 0.15s;
+}
+
+.wbd-add-item-btn:hover {
+  background: #005e8e;
+}
+
+.progress-milestone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateX(50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.progress-milestone-line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.progress-milestone-label {
+  position: absolute;
+  top: -20px;
+  right: 50%;
+  transform: translateX(50%);
+  white-space: nowrap;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 3px;
+}

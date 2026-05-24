@@ -1,0 +1,310 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpbb/wbd-progress-bar",
+  "version": "1.1.1",
+  "title": "Progress Bar",
+  "category": "widgets",
+  "icon": "chart-bar",
+  "description": "Display progress, skills, or statistics with a beautiful animated progress bar.",
+  "keywords": [
+    "progress",
+    "bar",
+    "percentage",
+    "chart",
+    "statistics",
+    "skills",
+    "animated",
+    "counter",
+    "radial",
+    "circular"
+  ],
+  "example": {
+    "attributes": {
+      "blockMode": "single",
+      "progressName": "Project Completion",
+      "percentage": 75,
+      "fillColor": "#4CAF50",
+      "trackColor": "#e5e5e5",
+      "showPercentage": true,
+      "progressHeight": 14,
+      "textColor": "#333333",
+      "percentageTextColor": "#ffffff",
+      "textFontSize": 14,
+      "percentageFontSize": 10,
+      "textFontFamily": "inherit",
+      "percentageFontFamily": "inherit",
+      "animationType": "ease",
+      "animationDuration": 1.2,
+      "barRadius": 999,
+      "labelPosition": "above",
+      "percentagePosition": "inside"
+    }
+  },
+  "attributes": {
+    "blockMode": {
+      "type": "string",
+      "default": "single"
+    },
+    "progressName": {
+      "type": "string",
+      "default": ""
+    },
+    "percentage": {
+      "type": "number",
+      "default": 50
+    },
+    "fillColor": {
+      "type": "string",
+      "default": "#4CAF50"
+    },
+    "trackColor": {
+      "type": "string",
+      "default": "#e5e5e5"
+    },
+    "showPercentage": {
+      "type": "boolean",
+      "default": true
+    },
+    "progressHeight": {
+      "type": "number",
+      "default": 12
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#333333"
+    },
+    "percentageTextColor": {
+      "type": "string",
+      "default": "#FFE200"
+    },
+    "textFontSize": {
+      "type": "number",
+      "default": 14
+    },
+    "percentageFontSize": {
+      "type": "number",
+      "default": 10
+    },
+    "textFontFamily": {
+      "type": "string",
+      "default": "inherit"
+    },
+    "percentageFontFamily": {
+      "type": "string",
+      "default": "inherit"
+    },
+    "animationType": {
+      "type": "string",
+      "default": "ease"
+    },
+    "animationDuration": {
+      "type": "number",
+      "default": 1.2
+    },
+    "animateOnScroll": {
+      "type": "boolean",
+      "default": false
+    },
+    "showMilestone": {
+      "type": "boolean",
+      "default": false
+    },
+    "milestoneValue": {
+      "type": "number",
+      "default": 50
+    },
+    "milestoneLabel": {
+      "type": "string",
+      "default": ""
+    },
+    "showTooltip": {
+      "type": "boolean",
+      "default": false
+    },
+    "tooltipText": {
+      "type": "string",
+      "default": ""
+    },
+    "gradientFill": {
+      "type": "boolean",
+      "default": false
+    },
+    "gradientColor2": {
+      "type": "string",
+      "default": "#4CAF50"
+    },
+    "barRadius": {
+      "type": "number",
+      "default": 999
+    },
+    "labelPosition": {
+      "type": "string",
+      "default": "above"
+    },
+    "percentagePosition": {
+      "type": "string",
+      "default": "inside"
+    },
+    "inlineGap": {
+      "type": "number",
+      "default": 12
+    },
+    "circularThemeIndex": {
+      "type": "number",
+      "default": 0
+    },
+    "circularSize": {
+      "type": "number",
+      "default": 140
+    },
+    "circularStrokeWidth": {
+      "type": "number",
+      "default": 8
+    },
+    "circularStrokeColor": {
+      "type": "string",
+      "default": "#1a73e8"
+    },
+    "circularTrackColor": {
+      "type": "string",
+      "default": "#d2e3fc"
+    },
+    "circularTextColor": {
+      "type": "string",
+      "default": "#1a73e8"
+    },
+    "circularBg": {
+      "type": "string",
+      "default": "transparent"
+    },
+    "circularShowLabel": {
+      "type": "boolean",
+      "default": false
+    },
+    "groupItems": {
+      "type": "array",
+      "default": [
+        {
+          "label": "HTML & CSS",
+          "percentage": 90,
+          "color": "#1a73e8"
+        },
+        {
+          "label": "JavaScript",
+          "percentage": 75,
+          "color": "#f9a825"
+        },
+        {
+          "label": "React",
+          "percentage": 65,
+          "color": "#00bcd4"
+        },
+        {
+          "label": "WordPress",
+          "percentage": 80,
+          "color": "#7b2d8b"
+        }
+      ]
+    },
+    "groupTrackColor": {
+      "type": "string",
+      "default": "#e5e5e5"
+    },
+    "groupBarHeight": {
+      "type": "number",
+      "default": 12
+    },
+    "groupBarRadius": {
+      "type": "number",
+      "default": 999
+    },
+    "groupGap": {
+      "type": "number",
+      "default": 16
+    },
+    "groupShowPercentage": {
+      "type": "boolean",
+      "default": true
+    },
+    "groupLabelPosition": {
+      "type": "string",
+      "default": "above"
+    },
+    "groupPercentagePosition": {
+      "type": "string",
+      "default": "label-right"
+    },
+    "groupInlineGap": {
+      "type": "number",
+      "default": 12
+    },
+    "counterTarget": {
+      "type": "number",
+      "default": 1000
+    },
+    "counterPrefix": {
+      "type": "string",
+      "default": ""
+    },
+    "counterSuffix": {
+      "type": "string",
+      "default": "+"
+    },
+    "counterDuration": {
+      "type": "number",
+      "default": 2
+    },
+    "counterFontSize": {
+      "type": "number",
+      "default": 48
+    },
+    "counterColor": {
+      "type": "string",
+      "default": "#1a73e8"
+    },
+    "counterShowBar": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "styles": [
+    {
+      "name": "medium",
+      "label": "Medium",
+      "isDefault": true
+    },
+    {
+      "name": "circle",
+      "label": "Circle"
+    },
+    {
+      "name": "striped",
+      "label": "Striped"
+    },
+    {
+      "name": "thin",
+      "label": "Thin"
+    },
+    {
+      "name": "thick",
+      "label": "Thick"
+    }
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "textdomain": "wbd-progress-bar",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
