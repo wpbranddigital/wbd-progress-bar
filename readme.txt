@@ -84,6 +84,8 @@ Built-in IntersectionObserver-based scroll trigger animates your bars when they 
 
 == Source Code & Build Instructions ==
 
+* **Source Code Repository:** https://github.com/wpbranddigital/wbd-progress-bar
+
 This plugin is built using `@wordpress/scripts` (webpack). The compiled/minified files in the `build/` directory are generated from the human-readable source files located in the `src/` directory of the plugin.
 
 **Source files included in this plugin:**
